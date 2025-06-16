@@ -18,8 +18,12 @@
         <p>보내고, 받고, 모으고, 쓰는<br>당신의 모든 일이 바뀌고 있습니다.</p>
         
         <ul class="btns flex">
-          <li><a href="#">Google Play</a></li>
-          <li><a href="#">App Store</a></li>
+          <li>
+            <a href="#"><span class="ico ico-1"></span>Google Play</a>
+          </li>
+          <li>
+            <a href="#"><span class="ico ico-2"></span>App Store</a>
+          </li>
         </ul>
       </div>
 
@@ -97,6 +101,14 @@
       display: block;
     }
 
+    .ico {
+      display: block;
+      background-color: #fff;
+      width: 24px;
+      height: 24px;
+      background-image: url(../imgs/img_kabang_220615.png);
+    }
+
     /* 커스텀 */
     .con_min_width {
       min-width: 1080px;
@@ -136,7 +148,7 @@
     }
 
     .main_banner > .text_box > .btns a {
-      display: block;
+      display: flex;
       width: 178px;
       height: 56px;
       border: 1px solid rgba(255, 255, 255, .3);
@@ -147,6 +159,24 @@
       color: #333;
       background-color: #fff;
       text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main_banner > .text_box > .btns > li:hover > a {
+      text-decoration: underline;
+    }
+
+    .main_banner > .text_box > .btns .ico {
+      margin-right: 10px;
+    }
+
+    .main_banner > .text_box > .btns .ico-1 {
+      background-position: -341px -292px; 
+    }
+
+    .main_banner > .text_box > .btns .ico-2 {
+      background-position: -371px -292px; 
     }
     /* 메인 배너 텍스트 끝 */
     /* 메인 배너 끝 */
