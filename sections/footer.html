@@ -17,23 +17,24 @@
 </head>
 <body>
   <footer class="con_min_width">
-    <div class="con border-red">
+    <div class="con">
       <div class="box_1">
         <div class="menu_box">
           <ul>
-            <li>모바일뱅킹 서비스 이용약관</li>
-            <li>전자금융거래 기본약관</li>
-            <li>위치기반 서비스 이용약관</li>
-            <li>카카오뱅크 인증서 서비스 이용약관</li>
-            <li>개인정보처리방침</li>
-            <li>신용정보활용체제</li>
-            <li>전자서명인증업무준칙</li>
-            <li>전자민원접수</li>
-            <li>보호금융상품등록부</li>
-            <li>상품공시실</li>
-            <li>경영공시</li>
-            <li>공지사항</li>
-            <li>카카오뱅크 인증서 서비스 개인정보처리방침</li>
+            <li><a href="#">모바일뱅킹 서비스 이용약관</a></li>
+            <li><a href="#">전자금융거래 기본약관</a></li>
+            <li><a href="#">위치기반 서비스 이용약관</a></li>
+            <li><a href="#">카카오뱅크 인증서 서비스 이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">신용정보활용체제</a></li>
+            <li><a href="#">전자서명인증업무준칙</a></li>
+            <br>
+            <li class="pd"><a href="#">전자민원접수</a></li>
+            <li><a href="#">보호금융상품등록부</a></li>
+            <li><a href="#">상품공시실</a></li>
+            <li><a href="#">경영공시</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">카카오뱅크 인증서 서비스 개인정보처리방침</a></li>
           </ul>
         </div>
       </div>
@@ -147,6 +148,27 @@
 
     footer .box_1 ul > li {
       display: inline-block;
+      padding: 4px 10px;
+      position: relative;
+    }
+    
+    footer .box_1 ul > li:not(:first-child)::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -2px;
+      transform: translateY(-50%);
+      background-color: #d8d8d8;
+      width: 1px;
+      height: 10px;
+    }
+
+    footer .box_1 ul > li:first-child {
+      padding-left: 0;
+    }
+
+    footer .box_1 ul > li.pd {
+      margin-left: 15px;
     }
     /* 푸터 끝 */
   </style>
